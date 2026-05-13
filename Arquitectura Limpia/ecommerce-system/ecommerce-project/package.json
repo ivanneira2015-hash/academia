@@ -1,0 +1,20 @@
+{
+  "name": "ecommerce-system",
+  "version": "1.0.0",
+  "description": "E-commerce system with clean architecture",
+  "private": true,
+  "workspaces": [
+    "domain",
+    "apps/backend"
+  ],
+  "scripts": {
+    "install-all": "yarn install",
+    "build": "yarn workspace domain build && yarn workspace backend build",
+    "test": "yarn workspace domain test",
+    "dev": "yarn workspace backend dev",
+    "start": "yarn workspace backend start"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}
