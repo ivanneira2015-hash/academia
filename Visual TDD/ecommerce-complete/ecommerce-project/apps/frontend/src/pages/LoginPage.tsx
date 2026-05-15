@@ -26,8 +26,9 @@ export default function LoginPage() {
         <h1 className="text-2xl font-bold mb-6">Login</h1>
         {error && <p className="text-red-500 mb-4">{error}</p>}
         <div className="mb-4">
-          <label className="block mb-2">Email</label>
+          <label htmlFor="email" className="block mb-2">Email</label>
           <input
+            id="email"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -35,8 +36,9 @@ export default function LoginPage() {
           />
         </div>
         <div className="mb-6">
-          <label className="block mb-2">Password</label>
+          <label htmlFor="password" className="block mb-2">Password</label>
           <input
+            id="password"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}

@@ -11,6 +11,7 @@
   "scripts": {
     "install-all": "yarn install",
     "build": "yarn workspace domain build && yarn workspace backend build && yarn workspace frontend build",
+    "test": "yarn workspace @ecommerce/frontend test",
     "dev": "concurrently \"yarn workspace backend dev\" \"yarn workspace frontend dev\"",
     "dev:backend": "yarn workspace backend dev",
     "dev:frontend": "yarn workspace frontend dev",
